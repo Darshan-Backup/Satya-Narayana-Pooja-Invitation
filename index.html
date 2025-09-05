@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en" data-color-scheme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Satya Narayana Pooja - Anant Chaturdashi 2025</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Cinzel:wght@500;600&display=swap" rel="stylesheet">
+</head>
+<body data-color-scheme="light">
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-header">
+                    <div class="om-symbol">ॐ</div>
+                    <h1 class="hero-title">सत्यनारायण पूजा</h1>
+                    <h2 class="hero-subtitle">Satya Narayana Pooja</h2>
+                    <p class="hero-occasion">On the blessed occasion of Anant Chaturdashi</p>
+                </div>
+                
+                <div class="hero-details">
+                    <div class="event-info">
+                        <div class="date-time">
+                            <div class="date">Friday, 06 September 2025</div>
+                            <div class="time">12:00 PM onwards</div>
+                            <div class="special-day">(Anant Chaturdashi)</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hero-mantras">
+                    <p class="mantra">ॐ गणेशाय नमः । ॐ नमो भगवते वासुदेवाय</p>
+                    <p class="blessing">गणपति बप्पा मोरया! । सत्यनारायण की जय!</p>
+                </div>
+
+                <button class="btn btn--primary btn--lg mobile-btn" onclick="scrollToGenerator()">
+                    Download Your Invitation
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about">
+        <div class="container">
+            <div class="about-content">
+                <h2>Double Blessings of Anant Chaturdashi</h2>
+                <div class="about-grid">
+                    <div class="about-card">
+                        <div class="about-icon ganesha-icon">🐘</div>
+                        <h3>Lord Ganesha's Farewell</h3>
+                        <p>Anant Chaturdashi marks the final day of Ganesh Chaturthi, when we bid farewell to Lord Ganesha with devotion.</p>
+                    </div>
+                    <div class="about-card">
+                        <div class="about-icon vishnu-icon">🪷</div>
+                        <h3>Satya Narayana Blessings</h3>
+                        <p>Performing Satya Narayana Pooja invokes divine protection and prosperity for all devotees.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Invitation Generator Section -->
+    <section class="generator" id="invitation-generator">
+        <div class="container">
+            <div class="generator-header">
+                <h2>Create Your Invitation</h2>
+                <p>Generate a beautiful invitation card</p>
+            </div>
+
+            <div class="generator-content">
+                <div class="form-section">
+                    <form class="invitation-form" id="invitationForm">
+                        <div class="form-group">
+                            <label class="form-label" for="guestName">Name *</label>
+                            <input type="text" id="guestName" class="form-control mobile-input" placeholder="Enter your name" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label" for="familyName">Family Name (Optional)</label>
+                            <input type="text" id="familyName" class="form-control mobile-input" placeholder="Family name (optional)">
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label" for="phoneNumber">Phone Number (Optional)</label>
+                            <input type="tel" id="phoneNumber" class="form-control mobile-input" placeholder="Phone number (optional)">
+                        </div>
+
+                        <div class="form-actions">
+                            <button type="button" class="btn btn--primary btn--full-width mobile-btn" id="generateBtn">Generate Invitation</button>
+                            <button type="button" class="btn btn--secondary btn--full-width mobile-btn hidden" id="downloadBtn">Download Invitation</button>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="preview-section">
+                    <div class="invitation-preview" id="invitationPreview">
+                        <div class="invitation-card">
+                            <div class="card-header">
+                                <div class="decorative-border-top"></div>
+                                <div class="spiritual-symbols">
+                                    <span class="ganesha-symbol">🐘</span>
+                                    <span class="om-symbol-small">ॐ</span>
+                                    <span class="kalash-symbol">🏺</span>
+                                </div>
+                            </div>
+
+                            <div class="card-content">
+                                <div class="opening-mantra">ॐ गणेशाय नमः । ॐ नमो भगवते वासुदेवाय ।</div>
+                                
+                                <h3 class="card-title">सत्यनारायण पूजा</h3>
+                                <h4 class="card-subtitle">Satya Narayana Pooja</h4>
+                                <p class="card-occasion">On the blessed occasion of Anant Chaturdashi</p>
+
+                                <div class="guest-name-section">
+                                    <p class="guest-name" id="previewGuestName">Dear [Guest Name]</p>
+                                    <p class="family-name hidden" id="previewFamilyName"></p>
+                                </div>
+
+                                <div class="invitation-text">
+                                    <p>You are cordially invited to join us for the auspicious Satya Narayana Pooja as we conclude the sacred Ganesh Chaturthi festival with divine blessings.</p>
+                                </div>
+
+                                <div class="event-details-card">
+                                    <div class="detail-row">
+                                        <strong>Date:</strong> Friday, 06 September 2025
+                                    </div>
+                                    <div class="detail-row">
+                                        <strong>Time:</strong> 12:00 PM onwards
+                                    </div>
+                                    <div class="detail-row">
+                                        <strong>Occasion:</strong> Anant Chaturdashi
+                                    </div>
+                                </div>
+
+                                <div class="default-blessing">
+                                    <p>Your presence will add joy to our celebration as we seek the combined blessings of Lord Ganesha and Lord Satya Narayana for prosperity, peace, and happiness in our lives.</p>
+                                </div>
+
+                                <div class="closing-mantras">गणपति बप्पा मोरया! । सत्यनारायण की जय!</div>
+
+                                <div class="host-info">
+                                    <div class="invited-by">
+                                        <strong>Invited by</strong><br>
+                                        <span class="host-name">Darshan Hulamani &amp; Family</span>
+                                    </div>
+                                    <div class="contact-info hidden" id="previewContact">
+                                        <p class="contact-text" id="contactText"></p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card-footer">
+                                <div class="traditional-symbols">
+                                    <span class="diya">🪔</span>
+                                    <span class="lotus">🪷</span>
+                                    <span class="diya">🪔</span>
+                                </div>
+                                <div class="decorative-border-bottom"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cultural Elements Section -->
+    <section class="cultural-significance">
+        <div class="container">
+            <h2>Sacred Traditions</h2>
+            <div class="traditions-grid">
+                <div class="tradition-item">
+                    <div class="tradition-icon">🏺</div>
+                    <h4>Kalash Worship</h4>
+                    <p>Sacred pot with mango leaves symbolizing divine presence</p>
+                </div>
+                <div class="tradition-item">
+                    <div class="tradition-icon">🪔</div>
+                    <h4>Diya Lighting</h4>
+                    <p>Oil lamps to invoke divine blessings and dispel darkness</p>
+                </div>
+                <div class="tradition-item">
+                    <div class="tradition-icon">🌺</div>
+                    <h4>Marigold Offerings</h4>
+                    <p>Sacred flowers representing devotion and purity</p>
+                </div>
+                <div class="tradition-item">
+                    <div class="tradition-icon">🌈</div>
+                    <h4>Rangoli Art</h4>
+                    <p>Colorful patterns to welcome divine energies</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-blessing">
+                    <div class="om-symbol">ॐ</div>
+                    <p>May Lord Ganesha and Lord Satya Narayana shower their eternal blessings upon all</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
