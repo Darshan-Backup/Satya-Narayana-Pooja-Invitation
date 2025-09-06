@@ -738,6 +738,7 @@ select.form-control {
 }
 
 /* END PERPLEXITY DESIGN SYSTEM */
+/* Complete Satya Narayana Pooja Website - Mobile Optimized */
 /* Force light mode for entire application */
 html, body {
   color-scheme: light only !important;
@@ -758,6 +759,7 @@ html, body {
   --color-pure-white: #FFFFFF;
   --color-light-cream: #FFF8F0;
   --color-darker-brown: #654321;
+  --color-deep-blue: #191970;
   
   /* Override design system colors for light mode */
   --color-background: var(--color-pure-white) !important;
@@ -769,14 +771,18 @@ html, body {
   --color-primary-active: #800000 !important;
   
   /* Mobile-first typography */
+  --font-size-mobile-xs: 14px;
+  --font-size-mobile-sm: 15px;
   --font-size-mobile-base: 16px;
   --font-size-mobile-lg: 18px;
   --font-size-mobile-xl: 20px;
   --font-size-mobile-2xl: 24px;
   --font-size-mobile-3xl: 28px;
   --font-size-mobile-4xl: 32px;
+  --font-size-mobile-5xl: 36px;
   
   /* Mobile spacing */
+  --mobile-space-4: 4px;
   --mobile-space-8: 8px;
   --mobile-space-12: 12px;
   --mobile-space-16: 16px;
@@ -784,6 +790,8 @@ html, body {
   --mobile-space-24: 24px;
   --mobile-space-32: 32px;
   --mobile-space-40: 40px;
+  --mobile-space-48: 48px;
+  --mobile-space-56: 56px;
   
   /* Cultural fonts */
   --font-traditional: 'Cinzel', serif;
@@ -831,7 +839,7 @@ body {
   box-shadow: 0 0 0 3px rgba(139, 0, 0, 0.2) !important;
 }
 
-/* Hero Section - Mobile First */
+/* Hero Section - Complete with all mantras */
 .hero {
   min-height: 100vh;
   background: linear-gradient(135deg, #FFF8F0 0%, #FFFEF7 50%, #FFF8E1 100%);
@@ -913,6 +921,25 @@ body {
   color: var(--color-temple-gold) !important;
   font-style: italic;
   font-weight: 500;
+  margin-bottom: var(--mobile-space-12);
+}
+
+.venue-info {
+  margin-top: var(--mobile-space-16);
+  padding-top: var(--mobile-space-16);
+  border-top: 2px solid var(--color-golden);
+}
+
+.hosted-by {
+  font-size: var(--font-size-mobile-base);
+  color: var(--color-spiritual-red) !important;
+  font-weight: 600;
+}
+
+.hosted-by strong {
+  color: var(--color-darker-brown) !important;
+  font-family: var(--font-traditional);
+  font-size: var(--font-size-mobile-lg);
 }
 
 .hero-mantras {
@@ -921,25 +948,59 @@ body {
   background: linear-gradient(135deg, #FFF8DC 0%, #FFFACD 100%);
   border-radius: var(--radius-lg);
   border: 2px solid var(--color-golden);
+  max-width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.opening-mantra {
+  margin-bottom: var(--mobile-space-20);
+  padding: var(--mobile-space-16);
+  background: linear-gradient(135deg, #FFE4E1 0%, #FFF0F5 100%);
+  border-radius: var(--radius-base);
+  border: 2px solid var(--color-spiritual-red);
 }
 
 .mantra {
   font-size: var(--font-size-mobile-lg);
   color: var(--color-spiritual-red) !important;
-  margin-bottom: var(--mobile-space-12);
+  margin: 0;
   font-weight: 600;
+}
+
+.closing-blessing {
+  margin-bottom: var(--mobile-space-20);
+  padding: var(--mobile-space-16);
+  background: linear-gradient(135deg, #F0F8FF 0%, #E6F3FF 100%);
+  border-radius: var(--radius-base);
+  border: 2px solid var(--color-traditional-green);
 }
 
 .blessing {
   font-size: var(--font-size-mobile-base);
-  color: var(--color-temple-gold) !important;
+  color: var(--color-traditional-green) !important;
   font-weight: 600;
   margin: 0;
 }
 
-/* About Section - Mobile Optimized */
+.spiritual-message {
+  padding: var(--mobile-space-16);
+  background: linear-gradient(135deg, #FFFEF7 0%, #FFF8E1 100%);
+  border-radius: var(--radius-base);
+  border: 2px solid var(--color-temple-gold);
+}
+
+.message {
+  font-size: var(--font-size-mobile-sm);
+  color: var(--color-darker-brown) !important;
+  font-style: italic;
+  margin: 0;
+  line-height: 1.5;
+}
+
+/* About Section - Complete with all explanations */
 .about {
-  padding: var(--mobile-space-40) 0;
+  padding: var(--mobile-space-48) 0;
   background: var(--color-light-cream);
 }
 
@@ -952,10 +1013,30 @@ body {
   font-weight: 600;
 }
 
+.about-intro {
+  margin-bottom: var(--mobile-space-40);
+  text-align: center;
+}
+
+.intro-text {
+  font-size: var(--font-size-mobile-lg);
+  color: var(--color-spiritual-red) !important;
+  line-height: 1.7;
+  max-width: 90%;
+  margin: 0 auto;
+  font-weight: 500;
+  padding: var(--mobile-space-20);
+  background: var(--color-pure-white);
+  border-radius: var(--radius-lg);
+  border: 2px solid var(--color-golden);
+  box-shadow: 0 4px 12px rgba(255, 165, 0, 0.15);
+}
+
 .about-grid {
   display: grid;
   grid-template-columns: 1fr;
   gap: var(--mobile-space-24);
+  margin-bottom: var(--mobile-space-40);
 }
 
 @media (min-width: 768px) {
@@ -995,11 +1076,218 @@ body {
   line-height: 1.6;
   font-size: var(--font-size-mobile-base);
   font-weight: 500;
+  margin-bottom: var(--mobile-space-16);
 }
 
-/* Generator Section - Mobile First */
+.significance-points {
+  text-align: left;
+  background: linear-gradient(135deg, #FFF8DC 0%, #FFFACD 100%);
+  padding: var(--mobile-space-16);
+  border-radius: var(--radius-base);
+  border: 2px solid var(--color-marigold);
+}
+
+.significance-points p {
+  font-size: var(--font-size-mobile-sm);
+  color: var(--color-darker-brown) !important;
+  margin-bottom: var(--mobile-space-8);
+  font-weight: 600;
+}
+
+.dual-celebration {
+  background: var(--color-pure-white);
+  padding: var(--mobile-space-32);
+  border-radius: var(--radius-lg);
+  border: 3px solid var(--color-spiritual-red);
+  box-shadow: 0 6px 20px rgba(139, 0, 0, 0.15);
+}
+
+.dual-celebration h3 {
+  font-size: var(--font-size-mobile-2xl);
+  color: var(--color-spiritual-red) !important;
+  text-align: center;
+  margin-bottom: var(--mobile-space-24);
+  font-family: var(--font-traditional);
+  font-weight: 600;
+}
+
+.celebration-explanation p {
+  font-size: var(--font-size-mobile-base);
+  color: var(--color-darker-brown) !important;
+  line-height: 1.7;
+  margin-bottom: var(--mobile-space-20);
+  font-weight: 500;
+}
+
+.tradition-note {
+  background: linear-gradient(135deg, #FFF8DC 0%, #FFFACD 100%);
+  padding: var(--mobile-space-20);
+  border-radius: var(--radius-base);
+  border: 2px solid var(--color-golden);
+  text-align: center;
+}
+
+.tradition-note p {
+  color: var(--color-spiritual-red) !important;
+  font-style: italic;
+  font-weight: 600;
+  margin: 0;
+  font-size: var(--font-size-mobile-base);
+}
+
+/* Cultural Significance Section - Complete with all 4 elements */
+.cultural-significance {
+  padding: var(--mobile-space-48) 0;
+  background: linear-gradient(135deg, #FFFEF7 0%, #FFF8F0 100%);
+}
+
+.cultural-significance h2 {
+  text-align: center;
+  font-size: var(--font-size-mobile-3xl);
+  color: var(--color-darker-brown) !important;
+  margin-bottom: var(--mobile-space-24);
+  font-family: var(--font-traditional);
+  font-weight: 600;
+}
+
+.cultural-intro {
+  text-align: center;
+  margin-bottom: var(--mobile-space-40);
+}
+
+.cultural-intro p {
+  font-size: var(--font-size-mobile-lg);
+  color: var(--color-spiritual-red) !important;
+  max-width: 90%;
+  margin: 0 auto;
+  font-weight: 500;
+  line-height: 1.6;
+}
+
+.traditions-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--mobile-space-20);
+  margin-bottom: var(--mobile-space-48);
+}
+
+@media (min-width: 768px) {
+  .traditions-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .traditions-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.tradition-item {
+  background: var(--color-pure-white);
+  padding: var(--mobile-space-20);
+  border-radius: var(--radius-lg);
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(255, 165, 0, 0.2);
+  border: 2px solid var(--color-golden);
+}
+
+.tradition-icon {
+  font-size: 3rem;
+  margin-bottom: var(--mobile-space-16);
+  display: block;
+  color: var(--color-saffron);
+}
+
+.tradition-item h4 {
+  font-size: var(--font-size-mobile-lg);
+  color: var(--color-darker-brown) !important;
+  margin-bottom: var(--mobile-space-12);
+  font-family: var(--font-traditional);
+  font-weight: 600;
+}
+
+.tradition-item p {
+  color: var(--color-spiritual-red) !important;
+  font-size: var(--font-size-mobile-base);
+  line-height: 1.5;
+  margin-bottom: var(--mobile-space-16);
+  font-weight: 500;
+}
+
+.tradition-details {
+  background: linear-gradient(135deg, #FFF8DC 0%, #FFFACD 100%);
+  padding: var(--mobile-space-12);
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--color-marigold);
+}
+
+.tradition-details p {
+  font-size: var(--font-size-mobile-sm);
+  color: var(--color-darker-brown) !important;
+  margin-bottom: var(--mobile-space-8);
+  font-weight: 600;
+  text-align: left;
+}
+
+.tradition-details p:last-child {
+  margin-bottom: 0;
+}
+
+.cultural-wisdom {
+  background: var(--color-pure-white);
+  padding: var(--mobile-space-32);
+  border-radius: var(--radius-lg);
+  border: 3px solid var(--color-temple-gold);
+  box-shadow: 0 6px 20px rgba(218, 165, 32, 0.2);
+}
+
+.cultural-wisdom h3 {
+  font-size: var(--font-size-mobile-2xl);
+  color: var(--color-spiritual-red) !important;
+  text-align: center;
+  margin-bottom: var(--mobile-space-32);
+  font-family: var(--font-traditional);
+  font-weight: 600;
+}
+
+.wisdom-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--mobile-space-20);
+}
+
+@media (min-width: 768px) {
+  .wisdom-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.wisdom-item {
+  background: linear-gradient(135deg, #F0F8FF 0%, #E6F3FF 100%);
+  padding: var(--mobile-space-20);
+  border-radius: var(--radius-base);
+  border: 2px solid var(--color-traditional-green);
+}
+
+.wisdom-item h4 {
+  font-size: var(--font-size-mobile-lg);
+  color: var(--color-traditional-green) !important;
+  margin-bottom: var(--mobile-space-12);
+  font-weight: 600;
+}
+
+.wisdom-item p {
+  font-size: var(--font-size-mobile-base);
+  color: var(--color-darker-brown) !important;
+  line-height: 1.5;
+  margin: 0;
+  font-weight: 500;
+}
+
+/* Generator Section - Complete with full form */
 .generator {
-  padding: var(--mobile-space-40) 0;
+  padding: var(--mobile-space-48) 0;
   background: linear-gradient(135deg, #FFFEF7 0%, #FFF8F0 100%);
 }
 
@@ -1067,7 +1355,7 @@ body {
   margin-top: var(--mobile-space-8);
 }
 
-/* Invitation Card - High Contrast Mobile Design */
+/* Complete Invitation Card - All content preserved */
 .preview-section {
   position: sticky;
   top: var(--mobile-space-20);
@@ -1088,9 +1376,6 @@ body {
   padding: var(--mobile-space-24);
   box-shadow: 0 8px 25px rgba(255, 165, 0, 0.3);
   position: relative;
-  width: 800px;
-  max-width: 100%;
-  margin: 0 auto;
 }
 
 .card-header {
@@ -1195,6 +1480,16 @@ body {
   line-height: 1.6;
   font-size: var(--font-size-mobile-base);
   font-weight: 500;
+  margin-bottom: var(--mobile-space-16);
+}
+
+.special-invitation {
+  font-style: italic;
+  color: var(--color-spiritual-red) !important;
+  background: linear-gradient(135deg, #FFE4E1 0%, #FFF0F5 100%);
+  padding: var(--mobile-space-12);
+  border-radius: var(--radius-sm);
+  border: 2px solid var(--color-spiritual-red);
 }
 
 .event-details-card {
@@ -1221,7 +1516,7 @@ body {
   margin-bottom: 0;
 }
 
-.default-blessing {
+.complete-blessing {
   margin-bottom: var(--mobile-space-24);
   padding: var(--mobile-space-16);
   background: linear-gradient(135deg, #F0F8FF 0%, #E6F3FF 100%);
@@ -1229,13 +1524,48 @@ body {
   border: 2px solid var(--color-traditional-green);
 }
 
-.default-blessing p {
+.complete-blessing p {
   color: var(--color-darker-brown) !important;
   font-size: var(--font-size-mobile-base);
   line-height: 1.6;
-  font-style: italic;
   font-weight: 500;
+  margin-bottom: var(--mobile-space-12);
+}
+
+.divine-blessing {
+  font-style: italic;
+  color: var(--color-traditional-green) !important;
+  font-weight: 600;
+}
+
+.ritual-details {
+  margin-bottom: var(--mobile-space-24);
+  padding: var(--mobile-space-16);
+  background: linear-gradient(135deg, #FFFEF7 0%, #FFF8E1 100%);
+  border-radius: var(--radius-base);
+  border: 2px solid var(--color-temple-gold);
+}
+
+.ritual-details h5 {
+  font-size: var(--font-size-mobile-lg);
+  color: var(--color-spiritual-red) !important;
+  margin-bottom: var(--mobile-space-12);
+  font-family: var(--font-traditional);
+  font-weight: 600;
+}
+
+.ritual-list {
+  list-style: none;
+  padding: 0;
   margin: 0;
+}
+
+.ritual-list li {
+  font-size: var(--font-size-mobile-base);
+  color: var(--color-darker-brown) !important;
+  margin-bottom: var(--mobile-space-8);
+  font-weight: 500;
+  text-align: left;
 }
 
 .closing-mantras {
@@ -1289,6 +1619,30 @@ body {
   margin: 0;
 }
 
+.final-blessing {
+  margin-bottom: var(--mobile-space-24);
+  padding: var(--mobile-space-16);
+  background: linear-gradient(135deg, #F0F8FF 0%, #E6F3FF 100%);
+  border-radius: var(--radius-base);
+  border: 2px solid var(--color-deep-blue);
+  text-align: center;
+}
+
+.sanskrit-blessing {
+  font-size: var(--font-size-mobile-lg);
+  color: var(--color-deep-blue) !important;
+  font-weight: 700;
+  margin-bottom: var(--mobile-space-8);
+}
+
+.english-blessing {
+  font-size: var(--font-size-mobile-base);
+  color: var(--color-traditional-green) !important;
+  font-style: italic;
+  font-weight: 500;
+  margin: 0;
+}
+
 .card-footer {
   margin-top: var(--mobile-space-24);
   text-align: center;
@@ -1297,12 +1651,12 @@ body {
 .traditional-symbols {
   display: flex;
   justify-content: center;
-  gap: var(--mobile-space-20);
+  gap: var(--mobile-space-16);
   margin-bottom: var(--mobile-space-16);
 }
 
-.diya, .lotus {
-  font-size: 2rem;
+.diya, .lotus, .rangoli {
+  font-size: 1.8rem;
   color: var(--color-saffron);
 }
 
@@ -1312,121 +1666,16 @@ body {
   border-radius: var(--radius-sm);
 }
 
-/* Loading Overlay for Mobile */
-.loading-overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(255, 248, 240, 0.95);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  z-index: 10000;
-}
-
-.loading-content {
-  text-align: center;
-  padding: var(--mobile-space-32);
-}
-
-.loading-spinner {
-  width: 60px;
-  height: 60px;
-  border: 4px solid var(--color-marigold);
-  border-top: 4px solid var(--color-spiritual-red);
-  border-radius: 50%;
-  animation: spin 1s linear infinite;
-  margin: 0 auto var(--mobile-space-20) auto;
-}
-
-.loading-text {
-  font-size: var(--font-size-mobile-lg);
-  color: var(--color-spiritual-red) !important;
-  font-weight: 600;
-  margin: 0;
-}
-
-@keyframes spin {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
-}
-
-/* Cultural Significance Section */
-.cultural-significance {
-  padding: var(--mobile-space-40) 0;
-  background: var(--color-light-cream);
-}
-
-.cultural-significance h2 {
-  text-align: center;
-  font-size: var(--font-size-mobile-3xl);
-  color: var(--color-darker-brown) !important;
-  margin-bottom: var(--mobile-space-32);
-  font-family: var(--font-traditional);
-  font-weight: 600;
-}
-
-.traditions-grid {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: var(--mobile-space-20);
-}
-
-@media (min-width: 768px) {
-  .traditions-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media (min-width: 1024px) {
-  .traditions-grid {
-    grid-template-columns: repeat(4, 1fr);
-  }
-}
-
-.tradition-item {
-  background: var(--color-pure-white);
-  padding: var(--mobile-space-20);
-  border-radius: var(--radius-lg);
-  text-align: center;
-  box-shadow: 0 4px 12px rgba(255, 165, 0, 0.2);
-  border: 2px solid var(--color-golden);
-}
-
-.tradition-icon {
-  font-size: 3rem;
-  margin-bottom: var(--mobile-space-16);
-  display: block;
-  color: var(--color-saffron);
-}
-
-.tradition-item h4 {
-  font-size: var(--font-size-mobile-lg);
-  color: var(--color-darker-brown) !important;
-  margin-bottom: var(--mobile-space-12);
-  font-family: var(--font-traditional);
-  font-weight: 600;
-}
-
-.tradition-item p {
-  color: var(--color-spiritual-red) !important;
-  font-size: var(--font-size-mobile-base);
-  line-height: 1.5;
-  margin: 0;
-  font-weight: 500;
-}
-
-/* Footer */
+/* Footer - Complete spiritual content */
 .footer {
   background: var(--color-pure-white);
-  padding: var(--mobile-space-32) 0;
+  padding: var(--mobile-space-48) 0;
   border-top: 3px solid var(--color-marigold);
 }
 
 .footer-blessing {
   text-align: center;
+  margin-bottom: var(--mobile-space-24);
 }
 
 .footer-blessing .om-symbol {
@@ -1435,12 +1684,30 @@ body {
   margin-bottom: var(--mobile-space-16);
 }
 
-.footer-blessing p {
+.main-blessing {
   color: var(--color-spiritual-red) !important;
+  font-size: var(--font-size-mobile-lg);
+  margin-bottom: var(--mobile-space-12);
+  font-weight: 600;
+}
+
+.sub-blessing {
+  color: var(--color-traditional-green) !important;
   font-size: var(--font-size-mobile-base);
-  margin: 0;
   font-style: italic;
   font-weight: 500;
+  margin: 0;
+}
+
+.footer-mantras {
+  text-align: center;
+}
+
+.footer-mantra {
+  color: var(--color-deep-blue) !important;
+  font-size: var(--font-size-mobile-lg);
+  font-weight: 700;
+  margin: 0;
 }
 
 /* Mobile Responsive Design */
@@ -1469,6 +1736,14 @@ body {
     padding-left: var(--mobile-space-16);
     padding-right: var(--mobile-space-16);
   }
+  
+  .spiritual-symbols {
+    gap: var(--mobile-space-12);
+  }
+  
+  .traditional-symbols {
+    gap: var(--mobile-space-12);
+  }
 }
 
 /* Utility Classes */
@@ -1485,91 +1760,6 @@ body {
 .mobile-btn:focus {
   outline: 3px solid var(--color-spiritual-red) !important;
   outline-offset: 2px;
-}
-
-/* Mobile notification styles */
-.mobile-notification {
-  position: fixed;
-  top: 20px;
-  left: 16px;
-  right: 16px;
-  z-index: 9999;
-  border-radius: 12px;
-  font-size: 16px;
-  font-weight: 600;
-  text-align: center;
-  padding: 16px 20px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
-}
-
-.mobile-notification-content {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 12px;
-}
-
-.mobile-notification-icon {
-  font-size: 20px;
-}
-
-.mobile-notification-text {
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 1.4;
-}
-
-/* Mobile animations */
-@keyframes mobileSlideDown {
-  from { 
-    transform: translateY(-100px); 
-    opacity: 0; 
-  }
-  to { 
-    transform: translateY(0); 
-    opacity: 1; 
-  }
-}
-
-@keyframes mobileSlideUp {
-  from { 
-    transform: translateY(0); 
-    opacity: 1; 
-  }
-  to { 
-    transform: translateY(-100px); 
-    opacity: 0; 
-  }
-}
-
-/* Mobile loading states */
-.mobile-btn:disabled {
-  opacity: 0.7;
-  cursor: not-allowed;
-  transform: scale(0.98);
-}
-
-/* Mobile touch feedback */
-.mobile-btn:active {
-  transform: scale(0.95);
-  transition: transform 0.1s ease;
-}
-
-.mobile-input:active {
-  transform: scale(1.01);
-  transition: transform 0.1s ease;
-}
-
-/* Mobile focus states for better accessibility */
-.form-group.mobile-focused .form-label {
-  color: #8B0000 !important;
-  transform: scale(1.05);
-}
-
-.form-group.mobile-focused .mobile-input {
-  border-color: #8B0000 !important;
-  box-shadow: 0 0 0 3px rgba(139, 0, 0, 0.2) !important;
-  transform: scale(1.02);
 }
 
 /* Ensure all text has proper contrast */
